@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html, body{
+    height:100%;
+    width:100%;
+}
+
+:root{
+    --x:200px;
+    --y:200px;
+}
+body{
+    height:100vh;
+    width:100vw;
+    background-image: url(/pic.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.spot{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    background: radial-gradient(
+        100px at var(--x) var(--y),
+        transparent 0px,
+        rgba(0,0,0,0.65) 170px,
+        rgba(0,0,0,0.9) 350px
+    );
+}
